@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -49,33 +51,18 @@
   </style>
 </head>
 <body>
-    <div style="text-align:right; margin-top:-1rem;">
-  <a href="index-en.html" style="
-    display:inline-block;
-    padding:0.3rem 0.6rem;
-    background-color:#f5f5f5;
-    border:1px solid #ccc;
-    border-radius:5px;
-    font-size:0.9rem;
-    text-decoration:none;
-    color:#000;
-  ">
-    English version
-  </a>
-</div>
-  <h1>Générateur de déclaration GAIDeT</h1>
+  <h1>Générateur de Déclaration GAIDeT</h1>
 
   <div class="section">
-    <p><strong>Ceci est une version bêta</strong> du Générateur de déclaration GAIDeT — un outil interactif permettant aux chercheurs de déclarer la délégation de tâches à des outils d'intelligence artificielle générative (IAG) conformément à la taxonomie GAIDeT.</p> 
-    <p>En savoir plus sur GAIDeT : Suchikova, Y., Tsybuliak, N., Teixeira da Silva, J. A., & Nazarovets, S. (2025). GAIDeT (Generative AI Delegation Taxonomy): A taxonomy for humans to delegate tasks to generative artificial intelligence in scientific research and publishing. Accountability in Research, in press. <a href="https://doi.org/10.1080/08989621.2025.2544331">https://doi.org/10.1080/08989621.2025.2544331</a>
-    <p>Vous pouvez également <a href="https://www.researchgate.net/publication/394419819_GAIDeT_Generative_AI_Delegation_Taxonomy_A_taxonomy_for_humans_to_delegate_tasks_to_generative_artificial_intelligence_in_scientific_research_and_publishing">demander le texte intégral via ResearchGate</a>.</p> 
-    <p> Pour déclarer l'utilisation de l'intelligence artificielle générative, remplissez les champs pertinents, après quoi la déclaration sera générée automatiquement. Copiez son texte et insérez-le dans votre manuscrit.</p>
-        
+    <p><strong>Ceci est une version bêta</strong> du Générateur de Déclaration GAIDeT — un outil interactif pour aider les chercheurs à déclarer de manière transparente l'utilisation d'outils d'Intelligence Artificielle Générative (IAG) dans la recherche et la rédaction scientifique.</p>
+    <p>📄 Pour en savoir plus sur GAIDeT : Suchikova, Y., Tsybuliak, N., Teixeira da Silva, J. A., & Nazarovets, S. (2025). GAIDeT (Generative AI Delegation Taxonomy): A taxonomy for humans to delegate tasks to generative artificial intelligence in scientific research and publishing. Accountability in Research, in press. <a href="https://doi.org/10.1080/08989621.2025.2544331">https://doi.org/10.1080/08989621.2025.2544331</a>
+    <p>✉️ Vous pouvez aussi <a href="https://www.researchgate.net/publication/394419819_GAIDeT_Generative_AI_Delegation_Taxonomy_A_taxonomy_for_humans_to_delegate_tasks_to_generative_artificial_intelligence_in_scientific_research_and_publishing">demander le texte intégral via ResearchGate</a>.</p>
+    <p>Pour déclarer l'utilisation de l'IA générative, remplissez les champs pertinents, et la déclaration sera générée automatiquement. Copiez le texte et insérez-le dans votre manuscrit.</p>
   </div>
 
   <div class="section">
     <h2>1. Qui a délégué les tâches ?</h2>
-    <input type="text" id="who" placeholder="ex: Yevhen Promptovych ou 'Responsabilité collective'">
+    <input type="text" id="who" placeholder="ex: Jeanne Dupont ou 'Responsabilité Collective'">
   </div>
 
   <div class="section">
@@ -178,7 +165,7 @@
       const comment = document.getElementById("comment").value.trim();
       const selectedTasks = Array.from(checkboxes).map(cb => cb.value);
 
-      let output = `Déclaration de délégation à une intelligence artificielle générative\n\n`;
+      let output = `Déclaration de Délégation à une Intelligence Artificielle Générative\n\n`;
       output += `Les auteurs déclarent l'utilisation de l'intelligence artificielle générative dans le processus de recherche et de rédaction. Conformément à la taxonomie GAIDeT (2025), les tâches suivantes ont été déléguées à des outils d'IAG sous l'entière supervision humaine :\n\n`;
 
       if (selectedTasks.length > 0) {
