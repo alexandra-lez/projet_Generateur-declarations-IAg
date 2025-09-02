@@ -1,11 +1,9 @@
----
----
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GAIDeT Declaration Generator</title>
+  <title>Générateur de déclaration GAIDeT</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -51,8 +49,8 @@
   </style>
 </head>
 <body>
-	<div style="text-align:right; margin-top:-1rem;">
-  <a href="index-uk.html" style="
+    <div style="text-align:right; margin-top:-1rem;">
+  <a href="index-en.html" style="
     display:inline-block;
     padding:0.3rem 0.6rem;
     background-color:#f5f5f5;
@@ -62,31 +60,31 @@
     text-decoration:none;
     color:#000;
   ">
-    🇺🇦 Українська версія
+    English version
   </a>
 </div>
-  <h1>🤖 GAIDeT Declaration Generator</h1>
+  <h1>Générateur de déclaration GAIDeT</h1>
 
   <div class="section">
-    <p><strong>This is a beta version</strong> of the GAIDeT Declaration Generator — an interactive tool for researchers to disclose the delegation of tasks to generative AI (GAI) tools in accordance with the GAIDeT taxonomy.</p> 
-	<p> 📄 Learn more about GAIDeT: Suchikova, Y., Tsybuliak, N., Teixeira da Silva, J. A., & Nazarovets, S. (2025). GAIDeT (Generative AI Delegation Taxonomy): A taxonomy for humans to delegate tasks to generative artificial intelligence in scientific research and publishing. Accountability in Research, in press. <a href="https://doi.org/10.1080/08989621.2025.2544331">https://doi.org/10.1080/08989621.2025.2544331</a>
-    <p> ✉️ You can also <a href="https://www.researchgate.net/publication/394419819_GAIDeT_Generative_AI_Delegation_Taxonomy_A_taxonomy_for_humans_to_delegate_tasks_to_generative_artificial_intelligence_in_scientific_research_and_publishing">request the full text via ResearchGate</a>.</p> 
-	<p> To disclose the use of generative AI, fill in the relevant fields, after which the declaration will be generated automatically. Copy its text and insert it into your manuscript.</p>
-		
+    <p><strong>Ceci est une version bêta</strong> du Générateur de déclaration GAIDeT — un outil interactif permettant aux chercheurs de déclarer la délégation de tâches à des outils d'intelligence artificielle générative (IAG) conformément à la taxonomie GAIDeT.</p> 
+    <p>En savoir plus sur GAIDeT : Suchikova, Y., Tsybuliak, N., Teixeira da Silva, J. A., & Nazarovets, S. (2025). GAIDeT (Generative AI Delegation Taxonomy): A taxonomy for humans to delegate tasks to generative artificial intelligence in scientific research and publishing. Accountability in Research, in press. <a href="https://doi.org/10.1080/08989621.2025.2544331">https://doi.org/10.1080/08989621.2025.2544331</a>
+    <p>Vous pouvez également <a href="https://www.researchgate.net/publication/394419819_GAIDeT_Generative_AI_Delegation_Taxonomy_A_taxonomy_for_humans_to_delegate_tasks_to_generative_artificial_intelligence_in_scientific_research_and_publishing">demander le texte intégral via ResearchGate</a>.</p> 
+    <p> Pour déclarer l'utilisation de l'intelligence artificielle générative, remplissez les champs pertinents, après quoi la déclaration sera générée automatiquement. Copiez son texte et insérez-le dans votre manuscrit.</p>
+        
   </div>
 
   <div class="section">
-    <h2>1. Who delegated the tasks?</h2>
-    <input type="text" id="who" placeholder="e.g., Yevhen Promptovych or 'Collective responsibility'">
+    <h2>1. Qui a délégué les tâches ?</h2>
+    <input type="text" id="who" placeholder="ex: Yevhen Promptovych ou 'Responsabilité collective'">
   </div>
 
   <div class="section">
-    <h2>2. Which LLM (and version) was used?</h2>
-    <input type="text" id="llm" placeholder="e.g., ChatGPT-4.5, Claude 3, Gemini 1.5">
+    <h2>2. Quel LLM (et quelle version) a été utilisé ?</h2>
+    <input type="text" id="llm" placeholder="ex: ChatGPT-4.5, Claude 3, Gemini 1.5">
   </div>
 
   <div class="section">
-    <h2>3. Select Delegated Tasks (from GAIDeT taxonomy)</h2>
+    <h2>3. Sélectionnez les tâches déléguées (selon la taxonomie GAIDeT)</h2>
 
     <details open>
         <summary>{{ site.data.terms.conceptualization.label }}</summary>
@@ -162,41 +160,41 @@
   </div>
 
   <div class="section">
-    <h2>4. Additional Comments (optional)</h2>
-    <textarea id="comment" placeholder="e.g., We used ChatGPT-4 to assist with literature synthesis..."></textarea>
+    <h2>4. Commentaires supplémentaires (optionnel)</h2>
+    <textarea id="comment" placeholder="ex: Nous avons utilisé ChatGPT-4 pour aider à la synthèse de la littérature..."></textarea>
   </div>
 
   <div class="section">
-    <h2>5. Generated Declaration</h2>
-    <button onclick="generateDeclaration()">Generate</button>
+    <h2>5. Déclaration générée</h2>
+    <button onclick="generateDeclaration()">Générer</button>
     <textarea id="output" readonly></textarea>
   </div>
 
   <script>
     function generateDeclaration() {
-      const who = document.getElementById("who").value || "[unspecified]";
+      const who = document.getElementById("who").value || "[non spécifié]";
       const llm = document.getElementById("llm").value.trim();
       const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
       const comment = document.getElementById("comment").value.trim();
       const selectedTasks = Array.from(checkboxes).map(cb => cb.value);
 
-      let output = `Disclosure of Delegation to Generative AI\n\n`;
-      output += `The authors declare the use of generative AI in the research and writing process. According to the GAIDeT taxonomy (2025), the following tasks were delegated to GAI tools under full human supervision:\n\n`;
+      let output = `Déclaration de délégation à une intelligence artificielle générative\n\n`;
+      output += `Les auteurs déclarent l'utilisation de l'intelligence artificielle générative dans le processus de recherche et de rédaction. Conformément à la taxonomie GAIDeT (2025), les tâches suivantes ont été déléguées à des outils d'IAG sous l'entière supervision humaine :\n\n`;
 
       if (selectedTasks.length > 0) {
         output += "- " + selectedTasks.join("\n- ") + "\n\n";
       } else {
-        output += "(No specific tasks selected)\n\n";
+        output += "(Aucune tâche spécifique sélectionnée)\n\n";
       }
 
       if (llm) {
-        output += `The GAI tool used was: ${llm}.\n`;
+        output += `L'outil d'IAG utilisé était : ${llm}.\n`;
       }
 
-      output += `Responsibility for the final manuscript lies entirely with the authors.\nGAI tools are not listed as authors and do not bear responsibility for the final outcomes.\nDeclaration submitted by: ${who}`;
+      output += `La responsabilité du manuscrit final incombe entièrement aux auteurs.\nLes outils d'IAG ne sont pas listés comme auteurs et ne portent aucune responsabilité pour les résultats finaux.\nDéclaration soumise par : ${who}`;
 
       if (comment) {
-        output += `\nAdditional note: ${comment}`;
+        output += `\nNote supplémentaire : ${comment}`;
       }
 
       const outputField = document.getElementById("output");
