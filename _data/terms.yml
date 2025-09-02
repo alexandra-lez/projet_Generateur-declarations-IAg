@@ -1,167 +1,64 @@
 conceptualization:
-  label: Conceptualization
-  label_uk: Концептуалізація
   label_fr: Conceptualisation
   terms:
-    - label: Idea generation
-      label_uk: Генерування ідей
-      label_fr: Génération d'idées
-    - label: Defining the research objective
-      label_uk: Визначення мети дослідження
-      label_fr: Définition de l'objectif de recherche
-    - label: Formulating research questions and hypotheses
-      label_uk: Формулювання дослідницьких питань і гіпотез
-      label_fr: Formulation des questions de recherche et des hypothèses
-    - label: Feasibility assessment and risk evaluation
-      label_uk: Оцінювання здійсненності та ризиків
-      label_fr: Évaluation de la faisabilité et des risques
-    - label: Preliminary hypothesis testing
-      label_uk: Попереднє тестування гіпотез
-      label_fr: Test préliminaire des hypothèses
-
+    - label_fr: Génération d'idées
+    - label_fr: Définition de l'objectif de recherche
+    - label_fr: Formulation des questions de recherche et des hypothèses
+    - label_fr: Évaluation de la faisabilité et des risques
+    - label_fr: Test préliminaire des hypothèses
 review:
-  label: Literature Review
-  label_uk: Огляд літератури
   label_fr: Revue de la littérature
   terms:
-    - label: Literature search and systematization
-      label_uk: Пошук і систематизація літератури
-      label_fr: Recherche et systématisation de la littérature
-    - label: Writing the literature review
-      label_uk: Написання огляду літератури
-      label_fr: Rédaction de la revue de la littérature
-    - label: Analysis of market trends and/or patent environment
-      label_uk: Аналіз ринкових трендів та/або патентного середовища
-      label_fr: Analyse des tendances du marché et/ou de l'environnement des brevets
-    - label: Evaluation of the novelty of the research and identification of gaps
-      label_uk: Оцінювання новизни дослідження та виявлення прогалин
-      label_fr: Évaluation de la nouveauté de la recherche et identification des lacunes
-
+    - label_fr: Recherche et systématisation de la littérature
+    - label_fr: Rédaction de la revue de la littérature
+    - label_fr: Analyse des tendances du marché et/ou de l'environnement des brevets
+    - label_fr: Évaluation de la nouveauté de la recherche et identification des lacunes
 methodology:
-  label: Methodology
-  label_uk: Методологія
   label_fr: Méthodologie
   terms:
-    - label: Research design
-      label_uk: Дизайн дослідження
-      label_fr: Conception de la recherche
-    - label: Development of experimental or research protocols
-      label_uk: Розроблення експериментальних або дослідницьких протоколів
-      label_fr: Développement de protocoles expérimentaux ou de recherche
-    - label: Selection of research methods
-      label_uk: Вибір методів дослідження
-      label_fr: Sélection des méthodes de recherche
-
+    - label_fr: Conception de la recherche
+    - label_fr: Développement de protocoles expérimentaux ou de recherche
+    - label_fr: Sélection des méthodes de recherche
 software:
-  label: Software Development and Automation
-  label_uk: Розробка програмного забезпечення та автоматизація
   label_fr: Développement logiciel et automatisation
   terms:
-    - label: Code generation
-      label_uk: Генерування коду
-      label_fr: Génération de code
-    - label: Code optimization
-      label_uk: Оптимізація коду
-      label_fr: Optimisation du code
-    - label: Process automation
-      label_uk: Автоматизація процесів
-      label_fr: Automatisation des processus
-    - label: Creation of algorithms for data analysis
-      label_uk: Створення алгоритмів для аналізу даних
-      label_fr: Création d'algorithmes pour l'analyse de données
-
+    - label_fr: Génération de code
+    - label_fr: Optimisation du code
+    - label_fr: Automatisation des processus
+    - label_fr: Création d'algorithmes pour l'analyse de données
 data:
-  label: Data Management
-  label_uk: Керування даними
   label_fr: Gestion des données
   terms:
-    - label: Data collection
-      label_uk: Збирання даних
-      label_fr: Collecte de données
-    - label: Validation
-      label_uk: Валідація
-      label_fr: Validation
-    - label: Data cleaning
-      label_uk: Очищення даних
-      label_fr: Nettoyage des données
-    - label: Data curation and organization
-      label_uk: Курація та організація даних
-      label_fr: Curation et organisation des données
-    - label: Data analysis
-      label_uk: Аналіз даних
-      label_fr: Analyse de données
-    - label: Visualization
-      label_uk: Візуалізація
-      label_fr: Visualisation
-    - label: Reproducibility testing
-      label_uk: Перевірка відтворюваності
-      label_fr: Test de reproductibilité
-
+    - label_fr: Collecte de données
+    - label_fr: Validation
+    - label_fr: Nettoyage des données
+    - label_fr: Curation et organisation des données
+    - label_fr: Analyse de données
+    - label_fr: Visualisation
+    - label_fr: Test de reproductibilité
 writing:
-  label: Writing and Editing
-  label_uk: Написання й редагування
   label_fr: Rédaction et édition
   terms:
-    - label: Text generation
-      label_uk: Генерування тексту
-      label_fr: Génération de texte
-    - label: Proofreading and editing
-      label_uk: Вичитування та редагування
-      label_fr: Relecture et correction
-    - label: Summarizing text
-      label_uk: Резюмування тексту
-      label_fr: Résumé de texte
-    - label: Formulation of conclusions
-      label_uk: Формулювання висновків
-      label_fr: Formulation des conclusions
-    - label: Adapting and adjusting emotional tone
-      label_uk: Адаптація та коригування емоційного тону
-      label_fr: Adaptation et ajustement du ton émotionnel
-    - label: Translation
-      label_uk: Переклад
-      label_fr: Traduction
-    - label: Reformatting
-      label_uk: Реформатування
-      label_fr: Reformatage
-    - label: Preparation of press releases and outreach materials
-      label_uk: Підготовка пресрелізів та матеріалів для популяризації
-      label_fr: Préparation de communiqués de presse et de matériel de vulgarisation
-
+    - label_fr: Génération de texte
+    - label_fr: Relecture et correction
+    - label_fr: Résumé de texte
+    - label_fr: Formulation des conclusions
+    - label_fr: Adaptation et ajustement du ton émotionnel
+    - label_fr: Traduction
+    - label_fr: Reformatage
+    - label_fr: Préparation de communiqués de presse et de matériel de vulgarisation
 ethics:
-  label: Ethics Review
-  label_uk: Етичний аналіз
   label_fr: Examen éthique
   terms:
-    - label: Bias analysis and potential discrimination assessment
-      label_uk: Аналіз упередженості та потенційної дискримінації
-      label_fr: Analyse des biais et évaluation de la discrimination potentielle
-    - label: Ethical risk analysis
-      label_uk: Аналіз етичних ризиків
-      label_fr: Analyse des risques éthiques
-    - label: Monitoring compliance with ethical standards
-      label_uk: Моніторинг дотримання етичних стандартів
-      label_fr: Suivi de la conformité aux normes éthiques
-    - label: Data confidentiality monitoring
-      label_uk: Моніторинг конфіденційності даних
-      label_fr: Suivi de la confidentialité des données
-
+    - label_fr: Analyse des biais et évaluation de la discrimination potentielle
+    - label_fr: Analyse des risques éthiques
+    - label_fr: Suivi de la conformité aux normes éthiques
+    - label_fr: Suivi de la confidentialité des données
 supervision:
-  label: Supervision
-  label_uk: Нагляд і керівництво
   label_fr: Supervision
   terms:
-    - label: Quality assessment
-      label_uk: Оцінювання якості
-      label_fr: Évaluation de la qualité
-    - label: Trend identification
-      label_uk: Виявлення трендів
-      label_fr: Identification des tendances
-    - label: Identification of limitations
-      label_uk: Визначення обмежень
-      label_fr: Identification des limites
-    - label: Recommendations
-      label_uk: Рекомендації
-      label_fr: Recommandations
-    - label: Publication support
-      label_uk: Підтримка публікації
-      label_fr: Aide à la publication
+    - label_fr: Évaluation de la qualité
+    - label_fr: Identification des tendances
+    - label_fr: Identification des limites
+    - label_fr: Recommandations
+    - label_fr: Aide à la publication
